@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>borikokeny | Contact</title>
+    <link href="css/contact.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <main>
+            <section class="contacts">
+                <h1>Contact Me</h1>
+                <p>Did you discover any new trends or meet some stunning or funny jewelry creation you would like to read about here?</p>
+                    <form id="contact_form" method="POST">
+                        <div class="contact_form">
+                            <label for="name">Full Name* (min 5 characters)</label>
+                            <input type="text" name="name" id="name" class="form__input" placeholder="e.g. Dory White">
+                            <div class="form-error" id="nameError">Please give at least 5 characters</div>
+                            <label for="email">E-mail*</label>
+                            <input type="email" name="email" id="email" class="form__input" placeholder="e.g. me@jewelry.no">
+                            <div class="form-error" id="emailError">Please enter a valid e-mail address</div>
+                            <label for="subject">Subject* (min 15 characters)</label>
+                            <input type="subject" name="subject" id="subject" class="form__input" placeholder="Do you know this designer?">
+                            <div class="form-error" id="subjectError">Please write at least 15 characters</div>
+                            <label for="message">Message* (min 25 characters)</label>
+                            <textarea type="message" name="message" id="message" class="form__input" placeholder="Your message goes here"></textarea>
+                            <div class="form-error" id="messageError">Please write at least 25 characters</div>
+                            <p class="thankyou-message"></p>
+                        </div>
+                        <div>
+                            <button class="send_button">Send</button>
+                        </div>
+                    </form>                          
+            </section>
+        </main>
+    </header>
+    <script src="js/contact.js"></script>
+</body>
+</html>
