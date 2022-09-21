@@ -22,8 +22,6 @@
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'flower-power' );
 
-define( 'HEADLESS_MODE_CLIENT_URL', 'https://peaceful-shortbread-7d538d.netlify.app' );
-
 /** Database username */
 define( 'DB_USER', 'root' );
 
