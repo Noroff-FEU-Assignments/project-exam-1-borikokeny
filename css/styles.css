@@ -8,6 +8,10 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+header {
+    background-image: ;
+}
+
 .footer-container-wrapper {
     display: flex;
     justify-content: space-between;
@@ -21,7 +25,8 @@ body {
 }
 
 .social-media i {
-    font-size: 3em;
+    font-size: 2em;
+    padding-top: 10px;
 }
 
 .copyright {
@@ -35,7 +40,7 @@ a {
 }
 
 footer {
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(14, 132, 96);
 }
 
 footer p {
