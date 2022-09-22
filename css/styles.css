@@ -9,10 +9,11 @@ body {
 }
 
 .header-image {
-    background-image: url('../images/Palm_3.jpg');
+    background-image: url('../images/Header_image_6.webp');
     background-size: contain;
     background-repeat: no-repeat;
-    min-height: 180vh;
+    min-height: 800px;
+    margin-top: -100px;
 }
 
 nav ul {
@@ -23,7 +24,10 @@ nav ul {
 }
 
 nav li {
-    color: black;
+    color: #000000;
+    font-size: 25px;
+    padding-right: 50px;
+    padding-top: 100px;
 }
 
 .active {
