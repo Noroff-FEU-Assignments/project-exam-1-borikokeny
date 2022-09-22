@@ -8,11 +8,26 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-header {
+.header-image {
     background-image: url('../images/Palm_2.jpg');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    min-height: 160vh;
+    min-height: 180vh;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+nav li {
+    color: black;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 .footer-container-wrapper {
@@ -37,7 +52,7 @@ header {
     margin-top: 15px;
 }
 
-a {
+footer a {
     text-decoration: none;
     color: white;
 }
