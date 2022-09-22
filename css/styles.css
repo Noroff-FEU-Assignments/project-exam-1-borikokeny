@@ -3,3 +3,41 @@
     src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap")
     format("woff2");
 }
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 600px;
+    min-height: 80px;
+}
+
+.social-media {
+    margin-top: 15px;
+    padding-left: 60px;
+}
+
+.social-media i {
+    font-size: 3em;
+}
+
+.copyright {
+    padding-right: 40px;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    background-color: rgb(36, 36, 36);
+}
+
+footer p {
+    color: white;
+}
