@@ -31,9 +31,10 @@ async function fetchPost() {
 fetchPost();
 
 function createHtml(details) {
-    specContainer.innerHTML = `
+    specContainer.innerHTML += `<div>
     <h1>${details.title.rendered}</h1>
-    <div>${details.content.rendered}</div>`;
+    <div>${details.content.rendered}</div></div>`;
 }
 
 {/* <h1 style="content:url('${details.title.rendered}')"></h1> */}
+<h1>${details.title.rendered}</h1>
