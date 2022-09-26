@@ -101,3 +101,8 @@ footer {
 footer p {
     color: white;
 }
+
+.preview-container a{
+    color: black;
+    font-size: 12px;
+}
