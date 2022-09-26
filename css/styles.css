@@ -4,12 +4,24 @@
     format("woff2");
 }
 
+@font-face {
+    font-family: "Allura", cursive;
+    src: url("https://fonts.googleapis.com/css2?family=Allura&display=swap")
+    format("woff2");
+}
+
+@font-face {
+    font-family: "Bodoni Moda", serif;
+    src: url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@1,6..96,600&display=swap")
+    format("woff2");
+}
+
 body {
     font-family: "Montserrat", sans-serif;
 }
 
 .header-image {
-    background-image: url('../images/Luxury-fashion-skull-Fish-tail-natural-beaded-green-cicada-charm-Water-droplets-lapis-lazuli-pendant-bead.jpg_Q90.jpg_.webp');
+    background-image: url('../images/bling-pave-stone-evil-eye-women-New-Fashion-chunky-Clavicle-Chain-for-Women-Irregular-Sun-Turquoise.jpg_Q90.jpg_.webp');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 900px;
@@ -26,13 +38,33 @@ nav ul {
 nav li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
     padding-right: 50px;
     padding-top: 200px;
 }
 
+.non-home-nav {
+    color: black;
+}
+
 .active {
     text-decoration: underline;
+}
+
+header h1 {
+    font-family: "Bodoni Moda", serif;
+    color: #ffffff;
+    font-size: 150px;
+    margin-left: 300px;
+    margin-top: 150px;
+}
+
+header h2 {
+    font-family: "Allura", cursive;
+    color: #117a59;
+    font-size: 70px;
+    margin-left: 300px;
+    /* margin-top: 50px; */
 }
 
 .footer-container-wrapper {
