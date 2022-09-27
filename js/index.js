@@ -10,7 +10,7 @@ async function getPosts(url){
 
     posts.forEach(function(post){
         postContainer.innerHTML += `
-        <a href=blogspecific.html?id=>
+        <a href="blogspecific.html?id=${post.id}">
         <h1>${post.title.rendered}</h1>
         <div>${post.content.rendered}</div></a>`;
     })

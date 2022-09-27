@@ -8,7 +8,7 @@ const id = params.get("id");
 
 console.log(id);
 
-const url = "https://www.borikokeny.one/wp-json/wp/v2/posts?_embed" + id;
+const url = "https://www.borikokeny.one/wp-json/wp/v2/posts/" + id;
 
 async function fetchPost() {
 
@@ -31,10 +31,7 @@ async function fetchPost() {
 fetchPost();
 
 function createHtml(details) {
-    specContainer.innerHTML += `<div>
-    <h1>${details.title.rendered}</h1>
+    specContainer.innerHTML = `
+    <div><h1>${details.title.rendered}</h1>
     <div>${details.content.rendered}</div></div>`;
 }
-
-{/* <h1 style="content:url('${details.title.rendered}')"></h1> */}
-<h1>${details.title.rendered}</h1>
