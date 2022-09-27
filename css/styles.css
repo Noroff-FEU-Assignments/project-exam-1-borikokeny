@@ -77,6 +77,10 @@ header h2 {
     height: 150px;
 }
 
+.about-img {
+    border-radius: 50%;
+}
+
 /*footer thing under this*/
 .footer-container-wrapper {
     display: flex;
