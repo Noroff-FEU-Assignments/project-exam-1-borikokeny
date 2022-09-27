@@ -67,6 +67,17 @@ header h2 {
     /* margin-top: 50px; */
 }
 
+.post-outfit img {
+    width: 80px;
+    height: 150px;
+}
+
+.post-outfit p {
+    width: 80px;
+    height: 150px;
+}
+
+/*footer thing under this*/
 .footer-container-wrapper {
     display: flex;
     justify-content: space-between;

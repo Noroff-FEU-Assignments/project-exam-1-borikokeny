@@ -33,5 +33,5 @@ fetchPost();
 function createHtml(details) {
     specContainer.innerHTML = `
     <div><h1>${details.title.rendered}</h1>
-    <div>${details.content.rendered}</div></div>`;
+    <div class="post-outfit">${details.content.rendered}</div></div>`;
 }
