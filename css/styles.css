@@ -77,8 +77,20 @@ header h2 {
     height: 150px;
 }
 
+.about-outfit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about-p {
+    padding-left: 20px;
+}
+
 .about-img {
     border-radius: 50%;
+    padding: 20px;
 }
 
 /*footer thing under this*/
