@@ -30,21 +30,28 @@ async function fetchPost() {
 
 fetchPost();
 
-// function createHtml(details) {
-//     specContainer.innerHTML = `
-//     <div><h1>${details.title.rendered}</h1>
-//     <div class="post-outfit">${details.content.rendered}</div></div>`;
-// }
+function createHtml(details) {
+    specContainer.innerHTML = `
+    <div><h1>${details.title.rendered}</h1>
+    <div class="post-outfit">${details.content.rendered}</div></div>`;
+}
+
+const originalImg = posts[i]._embedded["wp:featuredmedia"]?.[0].source_url
+const modal = document.querySelector(".modal");
+const modalImg = document.querySelector(".modal-img");
 
 // specContainer.innerHTML = "";
 
-// const originalImg = document.querySelector(".modal-amg");
-// const modal = document.querySelector(".modal");
-// const modalImg = document.querySelector(".modal-img");
 
+originalImg.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+// const modal = document.querySelector(".modal");
+// const originalImg = document.querySelector(".modal-amg");
+// const modalImg = document.querySelector(".modal-img");
 // originalImg.onclick = function(){
 //     modal.style.display = "block";
 //     modalImg.src = this.src;
 // }
-
-// wp-block-image
