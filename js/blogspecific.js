@@ -36,13 +36,15 @@ fetchPost();
 //     <div class="post-outfit">${details.content.rendered}</div></div>`;
 // }
 
-const originalImg = document.querySelector(".modal-amg");
-const modal = document.querySelector(".modal");
-const modalImg = document.querySelector(".modal-img");
+// specContainer.innerHTML = "";
 
-originalImg.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-}
+// const originalImg = document.querySelector(".modal-amg");
+// const modal = document.querySelector(".modal");
+// const modalImg = document.querySelector(".modal-img");
+
+// originalImg.onclick = function(){
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+// }
 
 // wp-block-image
