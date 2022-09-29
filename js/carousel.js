@@ -8,19 +8,23 @@ async function getPosts(url){
         const response = await fetch(url);
 
         const posts = await response.json();
+
+        postContainer.innerHTML = "";
     
         for(let i=0; i < posts.length; i++){
-            if (i < 4)
+            if (i > 3){
+                continue
+            }
            console.log(posts[i].title.rendered);
+           
+           postContainer.innerHTML += `
+           <a href="blogspecific.html?id=${posts[i].id}">
+           <h1>${posts[i].title.rendered}</h1>
+           <div>${posts[i].content.rendered}</div>`;
         }    
-
-        const post = posts[i];
-
-    post.forEach(function(post){
-        postContainer.innerHTML += `
-        <h1>${post[i].title.rendered}</h1>
-        <div>${post[i].content.rendered}</div>`;
-    })
+    // posts.forEach(function(post){
+       
+    // })
 }
 
 getPosts(baseUrl);

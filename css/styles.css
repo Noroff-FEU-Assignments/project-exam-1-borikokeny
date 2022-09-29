@@ -87,6 +87,18 @@ header h2 {
     height: 150px;
 }
 
+.modal-amg {
+    display: block;
+    width: 80px;
+    height: 150px;
+}
+
+.modal-img {
+    display: block;
+    width: 160px;
+    height: 300px;
+}
+
 .about-outfit {
     display: flex;
     flex-direction: row;
