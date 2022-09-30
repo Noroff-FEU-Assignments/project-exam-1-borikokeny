@@ -1,3 +1,5 @@
+ez mukodott a 4 elohivott micsodaval
+
 const baseUrl = "https://www.borikokeny.one/wp-json/wp/v2/posts?_embed";
 
 const postContainer = document.querySelector(".carousel-container");
@@ -12,7 +14,7 @@ async function getPosts(url){
         postContainer.innerHTML = "";
 
         
-
+    
         for(let i=0; i < posts.length; i++){
             if (i > 3){
                 continue
@@ -27,13 +29,3 @@ async function getPosts(url){
 };
 
 getPosts(baseUrl);
-
-// const arrow = document.querySelector(".slider-arrow");
-
-// arrow.onclick = function(event) {
-//     console.log(event.target);
-// };
-
-const imgage = document.querySelector(".carousel-container.img");
-
-        console.log(imgage);

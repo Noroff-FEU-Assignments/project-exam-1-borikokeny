@@ -1,20 +1,26 @@
-
-const modal = document.querySelector(".modal");
-
-const img = document.querySelector(".modal-source");
-const modalImg = document.querySelector(".real-modal");
-
-img.addEventListener('click', function(event) {
-    modal.style.display = "block";
-    modalImg.src = this.src;
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+const carousel = document.querySelector(".carousel-container");
+const track = document.querySelector(".track");
+let width = carousel.offsetWidth;
+let index = 0;
+window.addEventListener("resize", function () {
+  width = carousel.offsetWidth;
 });
-
-document.addEventListener('click', function(event) {
-    const ignoreClickOnMeElement = document.querySelector(".modal-container");
-    const isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
-
-    if (!isClickInsideElement && img!==event.target)  {
-        
-         modal.style.display = "none";
-    }
+next.addEventListener("click", function (e) {
+  e.preventDefault();
+  index = index + 1;
+  prev.classList.add("show");
+  track.style.transform = "translateX(" + index * -width + "px)";
+  if (track.offsetWidth - index * width < index * width) {
+    next.classList.add("hide");
+  }
+});
+prev.addEventListener("click", function () {
+  index = index - 1;
+  next.classList.remove("hide");
+  if (index === 0) {
+    prev.classList.remove("show");
+  }
+  track.style.transform = "translateX(" + index * -width + "px)";
 });
