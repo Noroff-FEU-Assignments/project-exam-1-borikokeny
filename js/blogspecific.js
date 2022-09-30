@@ -36,17 +36,46 @@ function createHtml(details) {
     <div class="post-outfit">${details.content.rendered}</div></div>`;
 }
 
-const originalImg = posts[i]._embedded["wp:featuredmedia"]?.[0].source_url
-const modal = document.querySelector(".modal");
-const modalImg = document.querySelector(".modal-img");
+// Get the modal
+var modal = document.querySelector(".modal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.querySelector(".modal-source");
+var modalImg = document.querySelector(".real-modal");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+document.addEventListener('click', function(event) {
+    const ignoreClickOnMeElement = document.querySelector(".modal-container");
+    const isClickInsideElement = ignoreClickOnMeElement.contains(event.target);
+    if (!isClickInsideElement) {
+        //Do something click is outside specified element
+        function myFunction() {
+            modalImg.style.display = "none";
+            }
+
+        console.log("yes");
+
+    }
+});
+
+
+
+
+
+// const originalImg = posts[i]._embedded["wp:featuredmedia"]?.[0].source_url
+// const modal = document.querySelector(".modal");
+// const modalImg = document.querySelector(".modal-img");
 
 // specContainer.innerHTML = "";
 
 
-originalImg.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-}
+// originalImg.onclick = function(){
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+// }
 
 // const modal = document.querySelector(".modal");
 // const originalImg = document.querySelector(".modal-amg");
