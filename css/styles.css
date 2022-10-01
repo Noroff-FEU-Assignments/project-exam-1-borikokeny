@@ -52,6 +52,10 @@ nav li a {
     font-weight: bold;
 }
 
+a, button {
+    cursor: pointer;
+}
+
 header h1 {
     font-family: "Bodoni Moda", serif;
     color: #ffffff;
@@ -78,14 +82,56 @@ header h2 {
     height: 150px;
 } */
 
-.post-outfit img {
-    width: 80px;
-    height: 150px;
+.blog-h1 {
+    margin-left: 110px;
 }
 
-.post-outfit p {
-    width: 80px;
-    height: 150px;
+.preview-container {
+    margin-left: 110px;
+}
+
+.preview-container h1 {
+    margin-top: 50px;
+}
+
+.preview-container p {
+    max-width: 570px;
+}
+
+.preview-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.wp-block-image {
+    margin-left: -40px;
+    object-fit: cover;
+    width: 570px;
+    height: 300px;
+}
+
+.wp-block-image img {
+    object-fit: cover;
+    width: 570px;
+    height: 300px;
+}
+
+.more {
+    margin-left: 340px;
+    padding: 10px;
+}
+
+.specific-container {
+    margin-left: 110px;
+}
+
+.specific-container h1 {
+    margin-top: 50px;
+}
+
+.specific-container p {
+    max-width: 570px;
 }
 
 .modal-source {
@@ -96,22 +142,36 @@ header h2 {
     margin: auto;
     display: block;
     max-width: 500px;
+    position: fixed;
+    top: 0;
+    margin-left: 150px;
 }
 
 .about-outfit {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 50px;
+}
+
+.about-img {
+    max-width: 350px;
+    margin-left: 250px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.about-text {
+    margin-top: 30px;
+    padding-left: 30px;
+    max-width: 500px;
+}
+
+.about-text h1 {
+    margin-left: 20px;
 }
 
 .about-p {
     padding-left: 20px;
-}
-
-.about-img {
-    border-radius: 50%;
-    padding: 20px;
 }
 
 /*footer thing under this*/
@@ -148,9 +208,4 @@ footer {
 
 footer p {
     color: white;
-}
-
-.preview-container a{
-    color: black;
-    font-size: 12px;
 }
