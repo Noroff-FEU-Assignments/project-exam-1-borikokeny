@@ -48,7 +48,8 @@ nav li a {
 }
 
 .active {
-    text-decoration: underline;
+    text-decoration: bold;
+    font-weight: bold;
 }
 
 header h1 {
