@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>borikokeny | Home</title>
+    <title>borikokeny | trial</title>
     <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/trial.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,20 +40,17 @@
         </header>
     </div>
     <main>
-        <div class="carousel-container">
-            <p>Latest posts</p>
-            <div class="carousel-group">
-                <div class="carousel-img"></div>
-            </div>
-            <div class="carousel-group"></div>
-            <div class="carousel-group"></div>
-            <button class="slider-arrow left-arrow">
-                <i class="fa fa-angle-left" aria-hidden="true"></i>
-            </button>
-            <button class="slider-arrow right-arrow">
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-            </button>
-        </div>
+        <h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="../images/Palm.jpg" style="width:100%">
+  <img class="mySlides" src="../images/Palm_2.jpg" style="width:100%">
+  <img class="mySlides" src="../images/Palm_3.jpg" style="width:100%">
+  <img class="mySlides" src="../images/Palm_4.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
     </main>
    <footer class="footer-container-wrapper">
     <div class="social-media">
@@ -73,6 +71,6 @@
         <p>@ Bori Kokeny 2022</p>
     </div>
    </footer>
-<script src="js/carousel.js" type="module"></script>   
+<script src="js/trial.js" type="module"></script>   
 </body>
 </html>

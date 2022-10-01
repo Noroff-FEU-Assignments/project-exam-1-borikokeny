@@ -4,9 +4,9 @@ const carousel = document.querySelector(".carousel-container");
 const track = document.querySelector(".track");
 let width = carousel.offsetWidth;
 let index = 0;
-window.addEventListener("resize", function () {
-  width = carousel.offsetWidth;
-});
+// window.addEventListener("resize", function () {
+//   width = carousel.offsetWidth;
+// });
 next.addEventListener("click", function (e) {
   e.preventDefault();
   index = index + 1;
@@ -24,3 +24,6 @@ prev.addEventListener("click", function () {
   }
   track.style.transform = "translateX(" + index * -width + "px)";
 });
+
+
+// https://codepen.io/Rraidas/pen/dyXGoea

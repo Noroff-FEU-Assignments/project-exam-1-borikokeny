@@ -1,0 +1,50 @@
+.carousel-container {
+    display: flex;
+    /* flex-direction: row;
+    justify-content: space-around;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    max-width: 1200px;
+    margin: 10px auto; */
+    grid-gap: 10px;
+    margin-top: 30px;
+    /* flex-wrap: wrap; */
+}
+
+.carousel-container a {
+    max-width: 200px;
+    margin: 0px auto;
+    padding: 0px 20px
+    text-align: center;
+    /* min-height: 500px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    border-style: solid;
+    color: black;
+}
+
+.carousel-container h1 {
+    max-width: 200px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.carousel-container p {
+    max-width: 200px;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.carousel-container img {
+    object-fit: cover;
+    width: 200px;
+    height: 100px;
+    /* justify-content: center;
+    margin: auto; */
+}
+
+/* .carousel-container img {
+    max-width: 200px;
+  
+} */
