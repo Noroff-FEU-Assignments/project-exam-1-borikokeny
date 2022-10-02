@@ -6,8 +6,6 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-console.log(id);
-
 const url = "https://www.borikokeny.one/wp-json/wp/v2/posts/" + id;
 
 async function fetchPost() {

@@ -17,12 +17,6 @@ async function getPosts(url){
             }
            console.log(posts[i].title.rendered);
 
-        //    const postsX = posts[i].title.rendered;
-
-        //    console.log(postsX);
-           
-            // const carImg = document.querySelector(".");
-
            postContainer.innerHTML += `
            <a href="blogspecific.html?id=${posts[i].id}">
            <h1>${posts[i].title.rendered}</h1>
@@ -30,21 +24,5 @@ async function getPosts(url){
            `;
         }    
 }
-// };      [your-data]._embedded['wp:featuredmedia']['0'].baseUrl
-// (post._embedded['wp:featuredmedia'][0].media_details)
-/* <div class="product-image" style="content:url('${posts._embedded['wp:featuredmedia'].source_url}')"></div> */
-
        
 getPosts(baseUrl);
-
-// const arrow = document.querySelector(".slider-arrow");
-
-// arrow.onclick = function(event) {
-//     console.log(event.target);
-// };
-
-
-
-// const imgage = document.querySelector(".carousel-container.img");
-
-//         console.log(imgage);

@@ -19,7 +19,8 @@
 :root {
     --black-color: rgb(0, 0, 0);
     --white-color: rgb(255, 255, 255);
-    --menta-color: rgb(46, 212, 156,);
+    --menta-color: rgb(46, 212, 156);
+    --green-color: 	rgb(15, 36, 29);
 }
 
 body {
@@ -39,6 +40,7 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 nav li a {
@@ -47,10 +49,6 @@ nav li a {
     font-size: 30px;
     padding-right: 50px;
     padding-top: 200px;
-}
-
-.non-home-nav {
-    color: black;
 }
 
 .active {
@@ -66,7 +64,7 @@ header h1 {
     font-family: "Bodoni Moda", serif;
     color: white;
     font-size: 150px;
-    margin-left: 332px;
+    text-align: center;
     margin-top: -4px;
 }
 
@@ -74,7 +72,7 @@ header h2 {
     font-family: "Allura", cursive;
     color: #2ed49c;
     font-size: 70px;
-    margin-left: 575px;
+    text-align: center;
     margin-top: -165px;
 }
 
@@ -82,6 +80,7 @@ header h2 {
     display: flex;
     grid-gap: 10px;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .carousel-container h1 {
@@ -164,6 +163,7 @@ header h2 {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .about-img {
