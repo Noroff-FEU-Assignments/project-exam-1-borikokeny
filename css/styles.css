@@ -36,7 +36,7 @@ nav ul {
 }
 
 nav li a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-size: 30px;
     padding-right: 50px;
@@ -58,7 +58,7 @@ a, button {
 
 header h1 {
     font-family: "Bodoni Moda", serif;
-    color: #ffffff;
+    color: #531a2e;
     font-size: 150px;
     margin-left: 300px;
     margin-top: 150px;
@@ -66,21 +66,41 @@ header h1 {
 
 header h2 {
     font-family: "Allura", cursive;
-    color: #117a59;
+    color: #003825;
     font-size: 70px;
     margin-left: 300px;
-    /* margin-top: 50px; */
 }
 
-/* .carousel-container img {
-    width: 50%;
-    height: 50%;
+.carousel-container {
+    display: flex;
+    grid-gap: 10px;
+    margin-top: 30px;
 }
 
-.carousel-container p {
-    width: 80px;
-    height: 150px;
-} */
+.carousel-container h1 {
+    font-size: 26px;
+}
+
+.carousel-container a {
+    max-width: 260px;
+    margin: 0px auto;
+    padding: 0px 20px
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    text-decoration: none;
+    text-align: center;
+    border-style: solid;
+    color: black;
+}
+
+.wp-block-image img {
+    margin-left: -80px;
+    object-fit: cover;
+    width: 260px;
+    height: 242px;
+}
 
 .blog-h1 {
     margin-left: 110px;
@@ -102,19 +122,6 @@ header h2 {
     text-decoration: none;
     color: black;
     font-size: 12px;
-}
-
-.wp-block-image {
-    margin-left: -40px;
-    object-fit: cover;
-    width: 570px;
-    height: 300px;
-}
-
-.wp-block-image img {
-    object-fit: cover;
-    width: 570px;
-    height: 300px;
 }
 
 .more {
@@ -174,7 +181,6 @@ header h2 {
     padding-left: 20px;
 }
 
-/*footer thing under this*/
 .footer-container-wrapper {
     display: flex;
     justify-content: space-between;

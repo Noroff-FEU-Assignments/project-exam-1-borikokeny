@@ -23,7 +23,7 @@ input, textarea {
 }
 
 label {
-margin: 20px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 .contact_points a {
@@ -35,10 +35,6 @@ margin: 20px 0px 0px 0px;
     display: none;
     color: red;
     font-size: 12px;
-}
-
-.thankyou-message {
-
 }
 
 .send_button {
