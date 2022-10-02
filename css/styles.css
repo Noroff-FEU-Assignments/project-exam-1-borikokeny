@@ -19,7 +19,7 @@
 :root {
     --black-color: rgb(0, 0, 0);
     --white-color: rgb(255, 255, 255);
-    --menta-color: rgb(46, 212, 156, 1);
+    --menta-color: rgb(46, 212, 156,);
 }
 
 body {
