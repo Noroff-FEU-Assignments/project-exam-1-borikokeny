@@ -16,6 +16,12 @@
     format("woff2");
 }
 
+:root {
+    --black-color: rgb(0, 0, 0);
+    --white-color: rgb(255, 255, 255);
+    --menta-color: rgb(46, 212, 156, 1);
+}
+
 body {
     font-family: "Montserrat", sans-serif;
 }
@@ -36,7 +42,7 @@ nav ul {
 }
 
 nav li a {
-    color: #000000;
+    color: black;
     text-decoration: none;
     font-size: 30px;
     padding-right: 50px;
@@ -58,17 +64,18 @@ a, button {
 
 header h1 {
     font-family: "Bodoni Moda", serif;
-    color: #531a2e;
+    color: white;
     font-size: 150px;
-    margin-left: 300px;
-    margin-top: 150px;
+    margin-left: 332px;
+    margin-top: -4px;
 }
 
 header h2 {
     font-family: "Allura", cursive;
-    color: #003825;
+    color: #2ed49c;
     font-size: 70px;
-    margin-left: 300px;
+    margin-left: 575px;
+    margin-top: -165px;
 }
 
 .carousel-container {
@@ -84,11 +91,10 @@ header h2 {
 .carousel-container a {
     max-width: 260px;
     margin: 0px auto;
-    padding: 0px 20px
+    padding: 0px 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     text-decoration: none;
     text-align: center;
     border-style: solid;
@@ -143,7 +149,7 @@ header h2 {
 
 .modal-source {
     cursor: pointer;
-  }
+}
 
 .real-modal {
     margin: auto;
@@ -209,7 +215,7 @@ footer a {
 }
 
 footer {
-    background-color: rgb(0, 0, 0);
+    background-color: black;
 }
 
 footer p {
